@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 public class GetAllDemoC {
     @Autowired
-    private GetAllDemo getAllDemo;
+    private GetAllDemo getAllDemo ;
     @RequestMapping(value="g",method = RequestMethod.GET)
     public List<Demo> g(){
         return getAllDemo.getAllDemo();
